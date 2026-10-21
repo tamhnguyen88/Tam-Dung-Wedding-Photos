@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VIEWME | Wedding Slideshow</title>
+    <meta
+      name="description"
+      content="A modern wedding photo slideshow experience for Tam & Dung."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="brand">VIEWME</div>
+        <div class="event-tag">Tam & Dung</div>
+      </header>
+
+      <main class="slideshow" aria-label="Wedding photo slideshow">
+        <div class="slides" id="slides">
+          <article class="slide is-active" data-index="0">
+            <img
+              src="https://images.unsplash.com/photo-1520854221256-17451cc331bf?auto=format&fit=crop&w=1600&q=80"
+              alt="Couple walking together outdoors"
+            />
+            <div class="slide-overlay"></div>
+            <div class="slide-content">
+              <p class="eyebrow">Forever Begins Here</p>
+              <h1>Our Love Story</h1>
+              <p class="subtitle">A celebration of laughter, love, and a lifetime of memories.</p>
+            </div>
+          </article>
+
+          <article class="slide" data-index="1">
+            <img
+              src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?auto=format&fit=crop&w=1600&q=80"
+              alt="Couple holding hands during sunset"
+            />
+            <div class="slide-overlay"></div>
+            <div class="slide-content">
+              <p class="eyebrow">Sunset Vows</p>
+              <h2>With every glance, a promise.</h2>
+              <p class="subtitle">Moments that sparkle with joy, warmth, and tenderness.</p>
+            </div>
+          </article>
+
+          <article class="slide" data-index="2">
+            <img
+              src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1600&q=80"
+              alt="Bride and groom smiling together"
+            />
+            <div class="slide-overlay"></div>
+            <div class="slide-content">
+              <p class="eyebrow">Made for Each Other</p>
+              <h2>Love in full bloom.</h2>
+              <p class="subtitle">A beautiful chapter written in the light of golden hours.</p>
+            </div>
+          </article>
+
+          <article class="slide" data-index="3">
+            <img
+              src="https://images.unsplash.com/photo-1529636798458-92182e662485?auto=format&fit=crop&w=1600&q=80"
+              alt="Wedding couple embracing outdoors"
+            />
+            <div class="slide-overlay"></div>
+            <div class="slide-content">
+              <p class="eyebrow">Shared Dreams</p>
+              <h2>Two hearts, one forever.</h2>
+              <p class="subtitle">Every chapter feels brighter when we walk it together.</p>
+            </div>
+          </article>
+
+          <article class="slide" data-index="4">
+            <img
+              src="https://images.unsplash.com/photo-1529636798458-92182e662485?auto=format&fit=crop&w=1600&q=80"
+              alt="Newlywed couple at the wedding venue"
+            />
+            <div class="slide-overlay"></div>
+            <div class="slide-content">
+              <p class="eyebrow">The Wedding Day</p>
+              <h2>To love, laugh, and always choose each other.</h2>
+              <p class="subtitle">A timeless celebration of the beginning of forever.</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="controls" aria-label="Slideshow controls">
+          <button class="nav-btn prev" id="prevBtn" aria-label="Previous slide">←</button>
+          <div class="progress-wrap" aria-live="polite">
+            <div class="progress-dots" id="progressDots"></div>
+          </div>
+          <button class="nav-btn next" id="nextBtn" aria-label="Next slide">→</button>
+        </div>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
